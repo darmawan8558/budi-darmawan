@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title> SOAL NO 2</title>
+    </head>
+    <body>
+        <h1> MEMVERIFIKASI VALIDASI PASSWORD </h1>
+
+    <form method="#" action="#">
+          
+        <div id="form"> 
+
+            <label> PASSWORD</label>
+            <input type="password" id="pass" name="pass" > 
+            <button type="button" onclick="cek()"> CEK PASSWORD</button>
+        </div>
+    </form>
+    
+        <script>
+            var masukan = document.getElementById('pass');
+
+           var hurufKecil = /[a-z]/g;
+           var hurufBesar = /[A-Z]/g;
+           var angka = /[0-9]/g;
+           
+        function cek(){
+            if ( masukan.value.match(hurufKecil) 
+            && masukan.value.match(hurufBesar) 
+            && masukan.value.match(angka) && masukan.value.length ==8){ 
+                alert('PASSWORD DAPAT DIGUNAKAN')}
+            else{alert('Password harus "Berjumlah 8 digit, memiliki setidaknya satu huruf kapital dan memiliki satu huruf kecil!!!!!!! ')}
+            
+
+        }
+
+
+
+        </script>
+    
+    </body>
+</html>

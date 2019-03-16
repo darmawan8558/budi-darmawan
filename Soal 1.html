@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SOAL NO 1 </title>
+    </head>
+    <body> 
+
+       <h1> BIODATA </h1>
+
+    <Section id="sc1" 
+    style="background-color :aqua ; 
+    position :relative ; 
+    top: 20px;
+    margin: 0;
+    float: right;  
+    right: 80%";>
+       <div class="bio"></div>
+       <div class="bio"></div>
+       <div class="bio"></div>
+       <div class="bio"></div>
+       <div class="bio"></div>
+       <div class="bio"></div>
+    </Section>
+
+    <Section id="sc2" style="background-color :aqua ; 
+    position :relative ; 
+    top: 20px;
+    margin: 0;
+    float: right;  
+    right: 30%";>
+       <div class="data"></div>
+       <div class="data"></div>
+       <div class="data"></div>
+       <div class="data"></div>
+       <div class="data"></div>
+       <div class="data"></div>
+    </Section>
+
+
+       <button type="button" onclick="tampil()"> KLICK!! </button>
+
+    <script>
+
+        var a = "Name";
+        var b = "Addres";
+        var c = "Hobby";
+        var d = "Is_Married";
+        var e = "School";
+        var f = "Skills";
+
+        var g = "Budi Darmawan";
+        var h = "Perum Emas Permata Rt16 rw 05 Kota Bengkulu Provinsi Bengkulu 38216";
+        var i = ["Futsal",  " Watching Movies", " Mountain Climbing", " Rock Climbing"];
+        var j = "Singles" ;
+        var k = "Married" ;
+        var l = {smk:"SMKs 8 Grakarsa", s1:"Universitas Dehasen"};
+        var m = ["Photoshop", " Construc 2", " JavaScript"];
+        var n = " : ";
+        var o = "belum_menikah";
+        var p = "punya_istri";
+        
+
+       function tampil(){
+        document.getElementsByClassName('bio')[0].innerHTML= a ;
+        document.getElementsByClassName('bio')[1].innerHTML= b ;
+        document.getElementsByClassName('bio')[2].innerHTML= c ;
+        document.getElementsByClassName('bio')[3].innerHTML= d ;
+        document.getElementsByClassName('bio')[4].innerHTML= e ;
+        document.getElementsByClassName('bio')[5].innerHTML= f ;
+
+        document.getElementsByClassName('data')[0].innerHTML= g ;
+        document.getElementsByClassName('data')[1].innerHTML= h ;
+        document.getElementsByClassName('data')[2].innerHTML= i ; 
+       
+        if( o == p ){
+        document.getElementsByClassName('data')[3].innerHTML= k ;}
+        else{ document.getElementsByClassName('data')[3].innerHTML= j ;}
+
+        document.getElementsByClassName('data')[4].innerHTML= l.smk + " and " +l.s1;
+
+        document.getElementsByClassName('data')[5].innerHTML= m;
+       }
+  
+    </script>
+
+    </body>
+</html>

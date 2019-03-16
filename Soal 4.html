@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> SOAL NO 4</title>
+</head>
+<body>
+    <h1> MENGHITUNG UANG KEMBALIAN</h1>
+
+    <form method="#" action="#">
+        <div class="hitung"> 
+            <label id="ltotal"> Total Belanja </label>
+            <input type="number" id="total" name="total">
+        </div>
+        <div class="hitung"> 
+            <label id="luangMasuk"> Uang Masuk </label>
+            <input type="number" id="uangMasuk" name="total">
+         </div>
+
+         <button type="button" onclick="hitung()"> HITUNG </button>
+         <button type="button" onclick="keterangan()"> KETERANGAN </button>
+         
+
+         <p id="ket" style="background-color:aquamarine"> </p>
+         <a id="a" style="background-color:rgb(197, 245, 165)"></a>
+        
+    </form>
+    
+    <script>
+        var a = 500;
+        var b = 1000;
+        var c = 2000;
+        var d = 5000;
+        var e = 10000;
+        var f = 20000;
+        var g = 50000;
+        var ttl = document.getElementById("total").value;
+        var um = document.getElementById("uangMasuk").value;
+        
+        
+        
+
+        function hitung(){
+            ttl = document.getElementById("total").value;
+            um = document.getElementById("uangMasuk").value;
+            var result=parseFloat(um)-parseFloat(ttl);
+            
+            if(!isNaN(result)){
+                document.getElementById('ket').innerHTML="Kembalian   " + result + "  Rupiah (*-*)";
+            }
+            
+            
+            else{ alert("PERIKSA KEMBALI INPUT ANDA!!");}
+        }
+
+
+        function keterangan(){
+            ttl = document.getElementById("total").value;
+            um = document.getElementById("uangMasuk").value;
+            result=parseFloat(um)-parseFloat(ttl);
+
+        if(result < b){
+                document.getElementById("a").innerHTML="Kembalian Menggunakan Uang Koin (RECEH *_*)";}
+
+        else{ 
+            document.getElementById("a").innerHTML="Kembalian menggunakan Uang Kertas";}
+        }
+        
+        
+        
+        
+        
+            
+    
+    
+    
+    
+    </script>
+</body>
+</html>

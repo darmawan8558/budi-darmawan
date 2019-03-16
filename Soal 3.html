@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SOAL NO 3</title>
+    </head>
+
+<body>
+
+
+        <button type="button" onclick="gambar1()"> Draw Image (5) </button>
+        <button type="button" onclick="gambar2()"> Draw Image (7) </button>
+
+
+<div style="background-color:rgb(204, 255, 191);
+        position: relative;
+        top: 20px;
+        margin: 0;
+        float: right;  
+        right: 50%;>
+    <p class="gambar1"></p>
+    <p class="gambar1"></p>
+    <p class="gambar1"></p>
+    <p class="gambar1"></p>
+    <p class="gambar1"></p>
+</div>
+<div style="background-color:rgb(255, 255, 191);
+        position: relative;
+        top: 20px;
+        margin: 0;
+        float: right;  
+        right: 33%";>
+    <p class="gambar2"></p>
+    <p class="gambar2"></p>
+    <p class="gambar2"></p>
+    <p class="gambar2"></p>
+    <p class="gambar2"></p>
+    <p class="gambar2"></p>
+    <p class="gambar2"></p>
+    
+</div>
+
+
+
+
+<script>
+    var a = "   =   "
+    var s = "   *   "
+    var q = " "
+
+    function gambar1(){
+        document.getElementsByTagName('p')[0].innerHTML=s+q+a+q+s+q+a+q+s;
+        document.getElementsByTagName('p')[1].innerHTML=a+a+s+a+a;
+        document.getElementsByTagName('p')[2].innerHTML=s+s+s+s+s;
+        document.getElementsByTagName('p')[3].innerHTML=a+a+s+a+a;
+        document.getElementsByTagName('p')[4].innerHTML=s+a+s+a+s;      
+    }
+    function gambar2(){
+        document.getElementsByTagName("p")[6].innerHTML=a+a+a+s+a+a+a;
+        document.getElementsByTagName('p')[5].innerHTML=s+a+a+s+a+a+s;
+        document.getElementsByTagName("p")[7].innerHTML=a+a+a+s+a+a+a;
+        document.getElementsByTagName("p")[8].innerHTML=s+s+s+s+s+s+s;
+        document.getElementsByTagName("p")[9].innerHTML=a+a+a+s+a+a+a;
+        document.getElementsByTagName("p")[10].innerHTML=a+a+a+s+a+a+a;
+        document.getElementsByTagName("p")[11].innerHTML=s+a+a+s+a+a+s;
+
+    }
+    
+
+</script>
+</body>
+</html>
